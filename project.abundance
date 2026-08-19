@@ -375,8 +375,8 @@
     },
     {
       "atomType": "Molecule",
-      "x": 0.23374340949033393,
-      "y": 0.09898477157360407,
+      "x": 0.24077328646748683,
+      "y": 0.06852791878172589,
       "uniqueID": "id-1272",
       "name": "Nosecone*add shock cord attachment",
       "topLevel": false,
@@ -798,6 +798,49 @@
               "ioValue": 10
             }
           ]
+        },
+        {
+          "atomType": "Rectangle",
+          "x": 0.5618043350908026,
+          "y": 0.7588832487309645,
+          "uniqueID": "id-2199",
+          "ioValues": [
+            {
+              "name": "x length",
+              "ioValue": 2.5,
+              "currentEquation": "2.5"
+            },
+            {
+              "name": "y length",
+              "ioValue": 14,
+              "currentEquation": "14"
+            }
+          ]
+        },
+        {
+          "atomType": "Extrude",
+          "x": 0.6947861745752782,
+          "y": 0.7385786802030456,
+          "uniqueID": "id-2203",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "height",
+              "ioValue": 2.5,
+              "currentEquation": "2.5"
+            }
+          ]
+        },
+        {
+          "atomType": "Fusion",
+          "x": 0.7850029291154071,
+          "y": 0.43401015228426393,
+          "uniqueID": "id-2208",
+          "ioValues": [],
+          "unionType": "Fusion"
         }
       ],
       "allConnectors": [
@@ -842,11 +885,6 @@
           "ap2ID": "id-1378"
         },
         {
-          "ap2Name": "number or geometry",
-          "ap1ID": "id-1378",
-          "ap2ID": "id-1274"
-        },
-        {
           "ap2Name": "geometry",
           "ap1ID": "id-1382",
           "ap2ID": "id-1385"
@@ -855,6 +893,11 @@
           "ap2Name": "Shape 5",
           "ap1ID": "id-1385",
           "ap2ID": "id-1359"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-2199",
+          "ap2ID": "id-2203"
         }
       ],
       "fileTypeVersion": 1
