@@ -375,10 +375,10 @@
     },
     {
       "atomType": "Molecule",
-      "x": 0.30169888693614527,
-      "y": 0.24619289340101524,
+      "x": 0.23901581722319862,
+      "y": 0.17512690355329952,
       "uniqueID": "id-1272",
-      "name": "Nosecone",
+      "name": "Nosecone*add shock cord attachment",
       "topLevel": false,
       "allAtoms": [
         {
@@ -861,8 +861,8 @@
     },
     {
       "atomType": "Molecule",
-      "x": 0.21968365553602814,
-      "y": 0.7309644670050761,
+      "x": 0.2255418863503222,
+      "y": 0.7131979695431473,
       "uniqueID": "id-1276",
       "name": "Fin",
       "topLevel": false,
