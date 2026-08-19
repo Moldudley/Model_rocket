@@ -20,8 +20,8 @@
     },
     {
       "atomType": "Molecule",
-      "x": 0.27065026362038663,
-      "y": 0.3756345177664974,
+      "x": 0.27006444053895723,
+      "y": 0.37817258883248733,
       "uniqueID": "id-1250",
       "name": "BodyTube",
       "topLevel": false,
@@ -836,10 +836,67 @@
         },
         {
           "atomType": "Fusion",
-          "x": 0.7850029291154071,
-          "y": 0.43401015228426393,
+          "x": 0.8289396602226128,
+          "y": 0.4593908629441624,
           "uniqueID": "id-2208",
-          "ioValues": [],
+          "ioValues": [
+            {
+              "name": "Shape 1",
+              "ioValue": {
+                "geometry": "cut-fuse-extrude-circle-8.5-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-10-fuse-move-66979dee-0-0-0-50-move-extrude-circle-9.5-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-2-0-0-10-extrude-circle-7-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-12",
+                "tags": [],
+                "bom": [
+                  "Haack series nose cone, length 40mm, outer diameter 22mm, C=0, wall thickness 2mm"
+                ],
+                "plane": {
+                  "origin": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "xDir": [
+                    1,
+                    0,
+                    0
+                  ],
+                  "normal": [
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                "color": "#aad7f2",
+                "dimension": "3D"
+              }
+            },
+            {
+              "name": "Shape 2",
+              "ioValue": {
+                "geometry": "extrude-rectangle-2.5-14-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-2.5",
+                "dimension": "3D",
+                "plane": {
+                  "origin": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "xDir": [
+                    1,
+                    0,
+                    0
+                  ],
+                  "normal": [
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                "color": "#aad7f2",
+                "tags": [],
+                "bom": []
+              }
+            }
+          ],
           "unionType": "Fusion"
         }
       ],
@@ -885,6 +942,11 @@
           "ap2ID": "id-1378"
         },
         {
+          "ap2Name": "Shape 1",
+          "ap1ID": "id-1378",
+          "ap2ID": "id-2208"
+        },
+        {
           "ap2Name": "geometry",
           "ap1ID": "id-1382",
           "ap2ID": "id-1385"
@@ -898,6 +960,16 @@
           "ap2Name": "geometry",
           "ap1ID": "id-2199",
           "ap2ID": "id-2203"
+        },
+        {
+          "ap2Name": "Shape 2",
+          "ap1ID": "id-2203",
+          "ap2ID": "id-2208"
+        },
+        {
+          "ap2Name": "number or geometry",
+          "ap1ID": "id-2208",
+          "ap2ID": "id-1274"
         }
       ],
       "fileTypeVersion": 1
