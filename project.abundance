@@ -17,9 +17,213 @@
           "ioValue": "__GEOMETRY_INPUT__"
         }
       ]
+    },
+    {
+      "atomType": "Molecule",
+      "x": 0.3210310486233157,
+      "y": 0.5710659898477157,
+      "uniqueID": "id-1250",
+      "name": "BodyTube",
+      "topLevel": false,
+      "allAtoms": [
+        {
+          "atomType": "Output",
+          "x": 0.98,
+          "y": 0.5,
+          "uniqueID": "id-1252",
+          "ioValues": [
+            {
+              "name": "number or geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ]
+        },
+        {
+          "atomType": "Circle",
+          "x": 0.20152314001171648,
+          "y": 0.4593908629441624,
+          "uniqueID": "id-1254",
+          "ioValues": [
+            {
+              "name": "diameter",
+              "ioValue": 22,
+              "currentEquation": "22"
+            }
+          ]
+        },
+        {
+          "atomType": "Extrude",
+          "x": 0.3015231400117165,
+          "y": 0.4593908629441624,
+          "uniqueID": "id-1257",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "height",
+              "ioValue": 200,
+              "currentEquation": "200"
+            }
+          ]
+        },
+        {
+          "atomType": "Circle",
+          "x": 0.1909783245459871,
+          "y": 0.5964467005076142,
+          "uniqueID": "id-1261",
+          "ioValues": [
+            {
+              "name": "diameter",
+              "ioValue": 18,
+              "currentEquation": "18"
+            }
+          ]
+        },
+        {
+          "atomType": "Extrude",
+          "x": 0.2968365553602812,
+          "y": 0.6116751269035533,
+          "uniqueID": "id-1264",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "height",
+              "ioValue": 200,
+              "currentEquation": "200"
+            }
+          ]
+        },
+        {
+          "atomType": "Difference",
+          "x": 0.3579379027533685,
+          "y": 0.5253807106598984,
+          "uniqueID": "id-1268",
+          "ioValues": [
+            {
+              "name": "retain",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "remove",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ]
+        }
+      ],
+      "allConnectors": [
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-1254",
+          "ap2ID": "id-1257"
+        },
+        {
+          "ap2Name": "retain",
+          "ap1ID": "id-1257",
+          "ap2ID": "id-1268"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-1261",
+          "ap2ID": "id-1264"
+        },
+        {
+          "ap2Name": "remove",
+          "ap1ID": "id-1264",
+          "ap2ID": "id-1268"
+        },
+        {
+          "ap2Name": "number or geometry",
+          "ap1ID": "id-1268",
+          "ap2ID": "id-1252"
+        }
+      ],
+      "fileTypeVersion": 1
+    },
+    {
+      "atomType": "Molecule",
+      "x": 0.30169888693614527,
+      "y": 0.24619289340101524,
+      "uniqueID": "id-1272",
+      "name": "Nosecone",
+      "topLevel": false,
+      "allAtoms": [
+        {
+          "atomType": "Output",
+          "x": 0.98,
+          "y": 0.5,
+          "uniqueID": "id-1274",
+          "ioValues": [
+            {
+              "name": "number or geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ]
+        }
+      ],
+      "allConnectors": [],
+      "fileTypeVersion": 1
+    },
+    {
+      "atomType": "Molecule",
+      "x": 0.21968365553602814,
+      "y": 0.7309644670050761,
+      "uniqueID": "id-1276",
+      "name": "Fin",
+      "topLevel": false,
+      "allAtoms": [
+        {
+          "atomType": "Output",
+          "x": 0.98,
+          "y": 0.5,
+          "uniqueID": "id-1278",
+          "ioValues": [
+            {
+              "name": "number or geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ]
+        }
+      ],
+      "allConnectors": [],
+      "fileTypeVersion": 1
+    },
+    {
+      "atomType": "Molecule",
+      "x": 0.11716461628588166,
+      "y": 0.601522842639594,
+      "uniqueID": "id-1280",
+      "name": "Molecule",
+      "topLevel": false,
+      "allAtoms": [
+        {
+          "atomType": "Output",
+          "x": 0.98,
+          "y": 0.5,
+          "uniqueID": "id-1282",
+          "ioValues": [
+            {
+              "name": "number or geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ]
+        }
+      ],
+      "allConnectors": [],
+      "fileTypeVersion": 1
     }
   ],
-  "allConnectors": [],
+  "allConnectors": [
+    {
+      "ap2Name": "number or geometry",
+      "ap1ID": "id-1250",
+      "ap2ID": "id-1248"
+    }
+  ],
   "unitsKey": "MM",
   "fileTypeVersion": 1,
   "filetypeVersion": 1
