@@ -395,8 +395,8 @@
         },
         {
           "atomType": "GitHubMolecule",
-          "x": 0.5,
-          "y": 0.6,
+          "x": 0.47861745752782653,
+          "y": 0.5,
           "uniqueID": "id-1328",
           "name": "Nosecone_Haack_Series",
           "ioValues": [
@@ -416,8 +416,8 @@
             },
             {
               "name": "Wall_Thickness",
-              "ioValue": 1.1,
-              "currentEquation": "1.1"
+              "ioValue": 2,
+              "currentEquation": "2"
             }
           ],
           "topLevel": false,
@@ -454,7 +454,7 @@
                 },
                 {
                   "name": "wallThickness",
-                  "ioValue": 1.1
+                  "ioValue": 2
                 }
               ],
               "interpreterVersion": 1,
@@ -546,9 +546,198 @@
           "unitsKey": "MM",
           "fileTypeVersion": 1,
           "lastReloadedFromGithubAt": 1787177041770
+        },
+        {
+          "atomType": "Move",
+          "x": 0.5547744581136497,
+          "y": 0.5203045685279188,
+          "uniqueID": "id-1346",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "xDist",
+              "ioValue": 0
+            },
+            {
+              "name": "yDist",
+              "ioValue": 0
+            },
+            {
+              "name": "zDist",
+              "ioValue": 50,
+              "currentEquation": "50"
+            }
+          ]
+        },
+        {
+          "atomType": "Circle",
+          "x": 0.38312829525483305,
+          "y": 0.6878172588832487,
+          "uniqueID": "id-1352",
+          "ioValues": [
+            {
+              "name": "diameter",
+              "ioValue": 19,
+              "currentEquation": "19"
+            }
+          ]
+        },
+        {
+          "atomType": "Extrude",
+          "x": 0.48740480374926765,
+          "y": 0.6928934010152284,
+          "uniqueID": "id-1355",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "height",
+              "ioValue": 2,
+              "currentEquation": "2"
+            }
+          ]
+        },
+        {
+          "atomType": "Fusion",
+          "x": 0.7615700058582309,
+          "y": 0.5812182741116751,
+          "uniqueID": "id-1359",
+          "ioValues": [
+            {
+              "name": "Shape 2",
+              "ioValue": {
+                "geometry": "move-66979dee-0-0-0-50",
+                "color": "#aad7f2",
+                "tags": [
+                  "nose-cone",
+                  "haack-series",
+                  "hollow"
+                ],
+                "bom": [
+                  "Haack series nose cone, length 40mm, outer diameter 22mm, C=0, wall thickness 2mm"
+                ],
+                "plane": {
+                  "origin": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "xDir": [
+                    1,
+                    0,
+                    0
+                  ],
+                  "normal": [
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                "metadata": {},
+                "dimension": "3D"
+              }
+            },
+            {
+              "name": "Shape 3",
+              "ioValue": {
+                "geometry": "move-extrude-circle-9.5-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-2-0-0-10",
+                "dimension": "3D",
+                "tags": [],
+                "plane": {
+                  "origin": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "xDir": [
+                    1,
+                    0,
+                    0
+                  ],
+                  "normal": [
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                "color": "#aad7f2",
+                "bom": []
+              }
+            }
+          ],
+          "unionType": "Fusion"
+        },
+        {
+          "atomType": "Move",
+          "x": 0.6033977738722905,
+          "y": 0.6928934010152284,
+          "uniqueID": "id-1364",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "xDist",
+              "ioValue": 0
+            },
+            {
+              "name": "yDist",
+              "ioValue": 0
+            },
+            {
+              "name": "zDist",
+              "ioValue": 10,
+              "currentEquation": "10"
+            }
+          ]
+        },
+        {
+          "atomType": "Circle",
+          "x": 0.38254247217340365,
+          "y": 0.8274111675126904,
+          "uniqueID": "id-1371",
+          "ioValues": [
+            {
+              "name": "diameter",
+              "ioValue": 14,
+              "currentEquation": "14"
+            }
+          ]
         }
       ],
-      "allConnectors": [],
+      "allConnectors": [
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-1328",
+          "ap2ID": "id-1346"
+        },
+        {
+          "ap2Name": "Shape 2",
+          "ap1ID": "id-1346",
+          "ap2ID": "id-1359"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-1352",
+          "ap2ID": "id-1355"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-1355",
+          "ap2ID": "id-1364"
+        },
+        {
+          "ap2Name": "Shape 3",
+          "ap1ID": "id-1364",
+          "ap2ID": "id-1359"
+        }
+      ],
       "fileTypeVersion": 1
     },
     {
