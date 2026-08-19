@@ -881,8 +881,8 @@
         },
         {
           "atomType": "GitHubMolecule",
-          "x": 0.3391915641476274,
-          "y": 0.2690355329949239,
+          "x": 0.35149384885764495,
+          "y": 0.32741116751269034,
           "uniqueID": "id-1412",
           "name": "naca_profile",
           "ioValues": [
@@ -1021,7 +1021,8 @@
           "ioValues": [
             {
               "name": "NACA_number",
-              "ioValue": 3.3
+              "ioValue": 30,
+              "currentEquation": "30"
             },
             {
               "name": "Cord_length",
@@ -1063,7 +1064,7 @@
                 },
                 {
                   "name": "nacaNumber",
-                  "ioValue": 3.3
+                  "ioValue": 30
                 }
               ],
               "interpreterVersion": 1,
@@ -1143,9 +1144,171 @@
           "unitsKey": "MM",
           "fileTypeVersion": 1,
           "lastReloadedFromGithubAt": 1787179036863
+        },
+        {
+          "atomType": "Move",
+          "x": 0.44171060339777385,
+          "y": 0.565989847715736,
+          "uniqueID": "id-1448",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "xDist",
+              "ioValue": 20,
+              "currentEquation": "20"
+            },
+            {
+              "name": "yDist",
+              "ioValue": 0
+            },
+            {
+              "name": "zDist",
+              "ioValue": 20,
+              "currentEquation": "20"
+            }
+          ]
+        },
+        {
+          "atomType": "Loft",
+          "x": 0.5354422964264792,
+          "y": 0.4365482233502538,
+          "uniqueID": "id-1454",
+          "ioValues": [
+            {
+              "name": "Shape 1",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "Shape 2",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "Shape 3",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "Shape 1",
+              "ioValue": {
+                "geometry": "f71f8280-0",
+                "color": "#aad7f2",
+                "tags": [
+                  "airfoil",
+                  "naca",
+                  "naca-0010"
+                ],
+                "bom": [
+                  "NACA 0010 airfoil profile, chord 30mm"
+                ],
+                "plane": {
+                  "origin": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "xDir": [
+                    1,
+                    0,
+                    0
+                  ],
+                  "normal": [
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                "metadata": {},
+                "dimension": "2D"
+              }
+            },
+            {
+              "name": "Shape 2",
+              "ioValue": {
+                "geometry": "move-a18e1e20-0-20-0-0",
+                "color": "#aad7f2",
+                "tags": [
+                  "airfoil",
+                  "naca",
+                  "naca-0030"
+                ],
+                "bom": [
+                  "NACA 0030 airfoil profile, chord 10mm"
+                ],
+                "plane": {
+                  "origin": [
+                    0,
+                    0,
+                    20
+                  ],
+                  "xDir": [
+                    1,
+                    0,
+                    0
+                  ],
+                  "normal": [
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                "metadata": {},
+                "dimension": "2D"
+              }
+            },
+            {
+              "name": "Shape 3",
+              "ioValue": null
+            }
+          ],
+          "closedSelection": 0
+        },
+        {
+          "atomType": "Extrude",
+          "x": 0.5377855887521968,
+          "y": 0.24111675126903556,
+          "uniqueID": "id-1459",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "height",
+              "ioValue": -2,
+              "currentEquation": "-2"
+            }
+          ]
         }
       ],
-      "allConnectors": [],
+      "allConnectors": [
+        {
+          "ap2Name": "Shape 1",
+          "ap1ID": "id-1412",
+          "ap2ID": "id-1454"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-1412",
+          "ap2ID": "id-1459"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-1433",
+          "ap2ID": "id-1448"
+        },
+        {
+          "ap2Name": "Shape 2",
+          "ap1ID": "id-1448",
+          "ap2ID": "id-1454"
+        },
+        {
+          "ap2Name": "number or geometry",
+          "ap1ID": "id-1454",
+          "ap2ID": "id-1278"
+        }
+      ],
       "fileTypeVersion": 1
     },
     {
