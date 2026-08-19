@@ -20,8 +20,8 @@
     },
     {
       "atomType": "Molecule",
-      "x": 0.3210310486233157,
-      "y": 0.5710659898477157,
+      "x": 0.31985940246045697,
+      "y": 0.5558375634517766,
       "uniqueID": "id-1250",
       "name": "BodyTube",
       "topLevel": false,
@@ -100,8 +100,8 @@
         },
         {
           "atomType": "Difference",
-          "x": 0.3579379027533685,
-          "y": 0.5253807106598984,
+          "x": 0.4657293497363796,
+          "y": 0.5609137055837563,
           "uniqueID": "id-1268",
           "ioValues": [
             {
@@ -113,6 +113,220 @@
               "ioValue": "__GEOMETRY_INPUT__"
             }
           ]
+        },
+        {
+          "atomType": "Molecule",
+          "x": 0.1886350322202695,
+          "y": 0.7614213197969544,
+          "uniqueID": "id-1284",
+          "name": "BulkHead",
+          "topLevel": false,
+          "allAtoms": [
+            {
+              "atomType": "Output",
+              "x": 0.98,
+              "y": 0.5,
+              "uniqueID": "id-1286",
+              "ioValues": [
+                {
+                  "name": "number or geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                }
+              ]
+            },
+            {
+              "atomType": "Circle",
+              "x": 0.29232571763327475,
+              "y": 0.5329949238578681,
+              "uniqueID": "id-1288",
+              "ioValues": [
+                {
+                  "name": "diameter",
+                  "ioValue": 18,
+                  "currentEquation": "18"
+                }
+              ]
+            },
+            {
+              "atomType": "Extrude",
+              "x": 0.39232571763327473,
+              "y": 0.5329949238578681,
+              "uniqueID": "id-1291",
+              "ioValues": [
+                {
+                  "name": "geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "height",
+                  "ioValue": 3,
+                  "currentEquation": "3"
+                }
+              ]
+            },
+            {
+              "atomType": "Circle",
+              "x": 0.29701230228471,
+              "y": 0.7081218274111675,
+              "uniqueID": "id-1299",
+              "ioValues": [
+                {
+                  "name": "diameter",
+                  "ioValue": 12,
+                  "currentEquation": "12"
+                }
+              ]
+            },
+            {
+              "atomType": "Extrude",
+              "x": 0.39701230228470996,
+              "y": 0.7081218274111675,
+              "uniqueID": "id-1302",
+              "ioValues": [
+                {
+                  "name": "geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "height",
+                  "ioValue": 3,
+                  "currentEquation": "3"
+                }
+              ]
+            },
+            {
+              "atomType": "Difference",
+              "x": 0.4862331575864089,
+              "y": 0.6040609137055838,
+              "uniqueID": "id-1306",
+              "ioValues": [
+                {
+                  "name": "retain",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "remove",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                }
+              ]
+            }
+          ],
+          "allConnectors": [
+            {
+              "ap2Name": "geometry",
+              "ap1ID": "id-1288",
+              "ap2ID": "id-1291"
+            },
+            {
+              "ap2Name": "retain",
+              "ap1ID": "id-1291",
+              "ap2ID": "id-1306"
+            },
+            {
+              "ap2Name": "geometry",
+              "ap1ID": "id-1299",
+              "ap2ID": "id-1302"
+            },
+            {
+              "ap2Name": "remove",
+              "ap1ID": "id-1302",
+              "ap2ID": "id-1306"
+            },
+            {
+              "ap2Name": "number or geometry",
+              "ap1ID": "id-1306",
+              "ap2ID": "id-1286"
+            }
+          ],
+          "fileTypeVersion": 1
+        },
+        {
+          "atomType": "Move",
+          "x": 0.2718219097832455,
+          "y": 0.7588832487309645,
+          "uniqueID": "id-1310",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "xDist",
+              "ioValue": 0
+            },
+            {
+              "name": "yDist",
+              "ioValue": 0
+            },
+            {
+              "name": "zDist",
+              "ioValue": 66,
+              "currentEquation": "66"
+            }
+          ]
+        },
+        {
+          "atomType": "Fusion",
+          "x": 0.5459871118922085,
+          "y": 0.5685279187817259,
+          "uniqueID": "id-1316",
+          "ioValues": [
+            {
+              "name": "Shape 1",
+              "ioValue": {
+                "geometry": "move-cut-extrude-circle-9-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-3-extrude-circle-6-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-3-0-0-66",
+                "dimension": "3D",
+                "tags": [],
+                "plane": {
+                  "origin": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "xDir": [
+                    1,
+                    0,
+                    0
+                  ],
+                  "normal": [
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                "color": "#aad7f2",
+                "bom": []
+              }
+            },
+            {
+              "name": "Shape 2",
+              "ioValue": {
+                "geometry": "cut-extrude-circle-11-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-200-extrude-circle-9-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-200",
+                "dimension": "3D",
+                "tags": [],
+                "plane": {
+                  "origin": [
+                    0,
+                    0,
+                    0
+                  ],
+                  "xDir": [
+                    1,
+                    0,
+                    0
+                  ],
+                  "normal": [
+                    0,
+                    0,
+                    1
+                  ]
+                },
+                "color": "#aad7f2",
+                "bom": []
+              }
+            }
+          ],
+          "unionType": "Fusion"
         }
       ],
       "allConnectors": [
@@ -137,8 +351,23 @@
           "ap2ID": "id-1268"
         },
         {
-          "ap2Name": "number or geometry",
+          "ap2Name": "Shape 2",
           "ap1ID": "id-1268",
+          "ap2ID": "id-1316"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-1284",
+          "ap2ID": "id-1310"
+        },
+        {
+          "ap2Name": "Shape 1",
+          "ap1ID": "id-1310",
+          "ap2ID": "id-1316"
+        },
+        {
+          "ap2Name": "number or geometry",
+          "ap1ID": "id-1316",
           "ap2ID": "id-1252"
         }
       ],
@@ -163,6 +392,160 @@
               "ioValue": "__GEOMETRY_INPUT__"
             }
           ]
+        },
+        {
+          "atomType": "GitHubMolecule",
+          "x": 0.5,
+          "y": 0.6,
+          "uniqueID": "id-1328",
+          "name": "Nosecone_Haack_Series",
+          "ioValues": [
+            {
+              "name": "C",
+              "ioValue": 0,
+              "currentEquation": "0"
+            },
+            {
+              "name": "Outer_Diameter",
+              "ioValue": 22
+            },
+            {
+              "name": "Length",
+              "ioValue": 40,
+              "currentEquation": "40"
+            },
+            {
+              "name": "Wall_Thickness",
+              "ioValue": 1.1,
+              "currentEquation": "1.1"
+            }
+          ],
+          "topLevel": false,
+          "allAtoms": [
+            {
+              "atomType": "Output",
+              "x": 0.98,
+              "y": 0.5,
+              "uniqueID": "id-1322",
+              "ioValues": [
+                {
+                  "name": "number or geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                }
+              ]
+            },
+            {
+              "atomType": "Code",
+              "x": 0.27240773286467485,
+              "y": 0.4898477157360406,
+              "uniqueID": "id-1323",
+              "ioValues": [
+                {
+                  "name": "length",
+                  "ioValue": 40
+                },
+                {
+                  "name": "outerDiameter",
+                  "ioValue": 22
+                },
+                {
+                  "name": "C",
+                  "ioValue": 0
+                },
+                {
+                  "name": "wallThickness",
+                  "ioValue": 1.1
+                }
+              ],
+              "interpreterVersion": 1,
+              "code": "/**\r\n * Hollow nose cone from the Haack series, equation-driven spline outer profile.\r\n * Solid of revolution around the Z axis; tip at z=0, base at z=length. Wall thickness is\r\n * applied radially (not a true perpendicular offset) — a standard, simple approximation.\r\n * length, outerDiameter, wallThickness in mm.\r\n * C sets the profile: 0 = LD-Haack / Von Karman (min drag for given length/diameter),\r\n * 0.333 = LV-Haack (min drag for given length/volume).\r\n */\r\nfunction run(\r\n  length: number = 100,\r\n  outerDiameter: number = 40,\r\n  C: number = 0,\r\n  wallThickness: number = 2,\r\n): Assembly {\r\n  const R = outerDiameter / 2;\r\n  const numPoints = Math.round(length * 3);\r\n\r\n  function radiusAt(x: number): number {\r\n    const theta = Math.acos(1 - (2 * x) / length);\r\n    return (\r\n      (R / Math.sqrt(Math.PI)) *\r\n      Math.sqrt(theta - Math.sin(2 * theta) / 2 + C * Math.pow(Math.sin(theta), 3))\r\n    );\r\n  }\r\n\r\n  function normalize(v: [number, number]): [number, number] {\r\n    const len = Math.hypot(v[0], v[1]);\r\n    return len === 0 ? [0, 0] : [v[0] / len, v[1] / len];\r\n  }\r\n\r\n  function buildOgiveProfile(radiusFn: (x: number) => number, extendTo?: number) {\r\n    const pts: [number, number][] = [[0, 0]];\r\n    for (let i = 1; i <= numPoints; i++) {\r\n      const x = (i / numPoints) * length;\r\n      pts.push([x, radiusFn(x)]);\r\n    }\r\n    const tans = pts.map((_, i) => {\r\n      const prev = pts[Math.max(0, i - 1)];\r\n      const next = pts[Math.min(pts.length - 1, i + 1)];\r\n      return normalize([next[0] - prev[0], next[1] - prev[1]]);\r\n    });\r\n\r\n    let pen = replicad.draw(pts[0]);\r\n    for (let i = 1; i < pts.length; i++) {\r\n      const [x0, y0] = pts[i - 1];\r\n      const [x1, y1] = pts[i];\r\n      const d = Math.hypot(x1 - x0, y1 - y0);\r\n      const t0 = tans[i - 1];\r\n      const t1 = tans[i];\r\n      const c1: [number, number] = [x0 + (t0[0] * d) / 3, y0 + (t0[1] * d) / 3];\r\n      const c2: [number, number] = [x1 - (t1[0] * d) / 3, y1 - (t1[1] * d) / 3];\r\n      pen = pen.cubicBezierCurveTo([x1, y1], c1, c2);\r\n    }\r\n\r\n    const [lastX, lastY] = pts[pts.length - 1];\r\n    if (extendTo !== undefined) {\r\n      pen = pen.lineTo([extendTo, lastY]).lineTo([extendTo, 0]);\r\n    } else {\r\n      pen = pen.lineTo([lastX, 0]);\r\n    }\r\n    return pen.close();\r\n  }\r\n\r\n  const outerProfile = buildOgiveProfile((x) => radiusAt(x));\r\n  const innerProfile = buildOgiveProfile(\r\n    (x) => Math.max(0, radiusAt(x) - wallThickness),\r\n    length + wallThickness,\r\n  );\r\n\r\n  const outerSolid = outerProfile.sketchOnPlane().revolve([1, 0, 0], { angle: 360 });\r\n  const innerSolid = innerProfile.sketchOnPlane().revolve([1, 0, 0], { angle: 360 });\r\n  console.log(\"about to do the cutting\")\r\n  const noseCone = outerSolid.cut(innerSolid).rotate(90, [0, 0, 0], [0, 1, 0]);\r\n  console.log(\"the cut finished\")\r\n\r\n  return new Assembly({\r\n    geometry: noseCone,\r\n    tags: [\"nose-cone\", \"haack-series\", \"hollow\"],\r\n    bom: [\r\n      `Haack series nose cone, length ${length}mm, outer diameter ${outerDiameter}mm, C=${C}, wall thickness ${wallThickness}mm`,\r\n    ],\r\n  });\r\n}",
+              "compiledCode": "\"use strict\";\n/**\n * Hollow nose cone from the Haack series, equation-driven spline outer profile.\n * Solid of revolution around the Z axis; tip at z=0, base at z=length. Wall thickness is\n * applied radially (not a true perpendicular offset) — a standard, simple approximation.\n * length, outerDiameter, wallThickness in mm.\n * C sets the profile: 0 = LD-Haack / Von Karman (min drag for given length/diameter),\n * 0.333 = LV-Haack (min drag for given length/volume).\n */\nfunction run(length = 100, outerDiameter = 40, C = 0, wallThickness = 2) {\n    const R = outerDiameter / 2;\n    const numPoints = Math.round(length * 3);\n    function radiusAt(x) {\n        const theta = Math.acos(1 - (2 * x) / length);\n        return ((R / Math.sqrt(Math.PI)) *\n            Math.sqrt(theta - Math.sin(2 * theta) / 2 + C * Math.pow(Math.sin(theta), 3)));\n    }\n    function normalize(v) {\n        const len = Math.hypot(v[0], v[1]);\n        return len === 0 ? [0, 0] : [v[0] / len, v[1] / len];\n    }\n    function buildOgiveProfile(radiusFn, extendTo) {\n        const pts = [[0, 0]];\n        for (let i = 1; i <= numPoints; i++) {\n            const x = (i / numPoints) * length;\n            pts.push([x, radiusFn(x)]);\n        }\n        const tans = pts.map((_, i) => {\n            const prev = pts[Math.max(0, i - 1)];\n            const next = pts[Math.min(pts.length - 1, i + 1)];\n            return normalize([next[0] - prev[0], next[1] - prev[1]]);\n        });\n        let pen = replicad.draw(pts[0]);\n        for (let i = 1; i < pts.length; i++) {\n            const [x0, y0] = pts[i - 1];\n            const [x1, y1] = pts[i];\n            const d = Math.hypot(x1 - x0, y1 - y0);\n            const t0 = tans[i - 1];\n            const t1 = tans[i];\n            const c1 = [x0 + (t0[0] * d) / 3, y0 + (t0[1] * d) / 3];\n            const c2 = [x1 - (t1[0] * d) / 3, y1 - (t1[1] * d) / 3];\n            pen = pen.cubicBezierCurveTo([x1, y1], c1, c2);\n        }\n        const [lastX, lastY] = pts[pts.length - 1];\n        if (extendTo !== undefined) {\n            pen = pen.lineTo([extendTo, lastY]).lineTo([extendTo, 0]);\n        }\n        else {\n            pen = pen.lineTo([lastX, 0]);\n        }\n        return pen.close();\n    }\n    const outerProfile = buildOgiveProfile((x) => radiusAt(x));\n    const innerProfile = buildOgiveProfile((x) => Math.max(0, radiusAt(x) - wallThickness), length + wallThickness);\n    const outerSolid = outerProfile.sketchOnPlane().revolve([1, 0, 0], { angle: 360 });\n    const innerSolid = innerProfile.sketchOnPlane().revolve([1, 0, 0], { angle: 360 });\n    console.log(\"about to do the cutting\");\n    const noseCone = outerSolid.cut(innerSolid).rotate(90, [0, 0, 0], [0, 1, 0]);\n    console.log(\"the cut finished\");\n    return new Assembly({\n        geometry: noseCone,\n        tags: [\"nose-cone\", \"haack-series\", \"hollow\"],\n        bom: [\n            `Haack series nose cone, length ${length}mm, outer diameter ${outerDiameter}mm, C=${C}, wall thickness ${wallThickness}mm`,\n        ],\n    });\n}\n"
+            },
+            {
+              "atomType": "Input",
+              "x": 0.025384615384615384,
+              "y": 0.15384615384615385,
+              "uniqueID": "id-1324",
+              "name": "C"
+            },
+            {
+              "atomType": "Input",
+              "x": 0.025384615384615384,
+              "y": 0.24615384615384617,
+              "uniqueID": "id-1325",
+              "name": "Outer_Diameter"
+            },
+            {
+              "atomType": "Input",
+              "x": 0.025384615384615384,
+              "y": 0.3384615384615385,
+              "uniqueID": "id-1326",
+              "name": "Length"
+            },
+            {
+              "atomType": "Input",
+              "x": 0.025384615384615384,
+              "y": 0.4307692307692308,
+              "uniqueID": "id-1327",
+              "name": "Wall_Thickness"
+            }
+          ],
+          "allConnectors": [
+            {
+              "ap2Name": "number or geometry",
+              "ap1ID": "id-1323",
+              "ap2ID": "id-1322"
+            },
+            {
+              "ap2Name": "C",
+              "ap1ID": "id-1324",
+              "ap2ID": "id-1323"
+            },
+            {
+              "ap2Name": "outerDiameter",
+              "ap1ID": "id-1325",
+              "ap2ID": "id-1323"
+            },
+            {
+              "ap2Name": "length",
+              "ap1ID": "id-1326",
+              "ap2ID": "id-1323"
+            },
+            {
+              "ap2Name": "wallThickness",
+              "ap1ID": "id-1327",
+              "ap2ID": "id-1323"
+            }
+          ],
+          "parentRepo": {
+            "lastFoundGit": "2026-08-19T18:23:39.128Z",
+            "privateRepo": false,
+            "repoName": "Nosecone_Haack_Series",
+            "dateCreated": "2026-08-18T19:10:51Z",
+            "pngURL": "https://raw.githubusercontent.com/Moldudley/Nosecone_Haack_Series/main/project.png",
+            "readMe": "https://raw.githubusercontent.com/Moldudley/Nosecone_Haack_Series/master/README.md?sanitize=true",
+            "yyyy": 2026,
+            "topMoleculeID": "id-1213",
+            "userSetAsThumbnail": false,
+            "githubMoleculesUsed": [],
+            "html_url": "https://github.com/Moldudley/Nosecone_Haack_Series",
+            "topics": [],
+            "pullRequests": [],
+            "userSetThumbnail": true,
+            "parentRepo": null,
+            "forks": 0,
+            "dateModified": "739847",
+            "ranking": 0,
+            "searchField": "nosecone_haack_series moldudley rocket nose cone, haack series, c = 0 (von karman/ld-haack), c = 1/3 (lv-haack), hollow version - non hallow version available as \"nosecone_haack_series_nothollow\" ",
+            "owner": "Moldudley",
+            "description": "Rocket nose cone, Haack series, C = 0 (Von Karman/LD-Haack), C = 1/3 (LV-Haack), Hollow version - non hallow version available as \"Nosecone_Haack_Series_notHollow\"",
+            "contentURL": "https://raw.githubusercontent.com/Moldudley/Nosecone_Haack_Series/master/project.abundance?sanitize=true",
+            "svgURL": "https://raw.githubusercontent.com/Moldudley/Nosecone_Haack_Series/master/project.svg?sanitize=true",
+            "isLocal": false
+          },
+          "unitsKey": "MM",
+          "fileTypeVersion": 1,
+          "lastReloadedFromGithubAt": 1787177041770
         }
       ],
       "allConnectors": [],
@@ -197,7 +580,7 @@
       "x": 0.11716461628588166,
       "y": 0.601522842639594,
       "uniqueID": "id-1280",
-      "name": "Molecule",
+      "name": "LaunchLug",
       "topLevel": false,
       "allAtoms": [
         {
