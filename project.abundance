@@ -395,8 +395,8 @@
         },
         {
           "atomType": "GitHubMolecule",
-          "x": 0.47861745752782653,
-          "y": 0.5,
+          "x": 0.2577621558289397,
+          "y": 0.12944162436548223,
           "uniqueID": "id-1328",
           "name": "Nosecone_Haack_Series",
           "ioValues": [
@@ -549,8 +549,8 @@
         },
         {
           "atomType": "Move",
-          "x": 0.5547744581136497,
-          "y": 0.5203045685279188,
+          "x": 0.40246045694200355,
+          "y": 0.18274111675126903,
           "uniqueID": "id-1346",
           "ioValues": [
             {
@@ -574,8 +574,8 @@
         },
         {
           "atomType": "Circle",
-          "x": 0.38312829525483305,
-          "y": 0.6878172588832487,
+          "x": 0.28412419449326304,
+          "y": 0.3197969543147208,
           "uniqueID": "id-1352",
           "ioValues": [
             {
@@ -587,8 +587,8 @@
         },
         {
           "atomType": "Extrude",
-          "x": 0.48740480374926765,
-          "y": 0.6928934010152284,
+          "x": 0.37551259519625074,
+          "y": 0.3401015228426396,
           "uniqueID": "id-1355",
           "ioValues": [
             {
@@ -604,8 +604,8 @@
         },
         {
           "atomType": "Fusion",
-          "x": 0.7615700058582309,
-          "y": 0.5812182741116751,
+          "x": 0.6010544815465729,
+          "y": 0.26649746192893403,
           "uniqueID": "id-1359",
           "ioValues": [
             {
@@ -644,38 +644,15 @@
             },
             {
               "name": "Shape 3",
-              "ioValue": {
-                "geometry": "move-extrude-circle-9.5-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-2-0-0-10",
-                "dimension": "3D",
-                "tags": [],
-                "plane": {
-                  "origin": [
-                    0,
-                    0,
-                    0
-                  ],
-                  "xDir": [
-                    1,
-                    0,
-                    0
-                  ],
-                  "normal": [
-                    0,
-                    0,
-                    1
-                  ]
-                },
-                "color": "#aad7f2",
-                "bom": []
-              }
+              "ioValue": null
             }
           ],
           "unionType": "Fusion"
         },
         {
           "atomType": "Move",
-          "x": 0.6033977738722905,
-          "y": 0.6928934010152284,
+          "x": 0.5541886350322203,
+          "y": 0.6345177664974619,
           "uniqueID": "id-1364",
           "ioValues": [
             {
@@ -699,14 +676,76 @@
         },
         {
           "atomType": "Circle",
-          "x": 0.38254247217340365,
-          "y": 0.8274111675126904,
+          "x": 0.2624487404803749,
+          "y": 0.47715736040609136,
           "uniqueID": "id-1371",
           "ioValues": [
             {
               "name": "diameter",
               "ioValue": 14,
               "currentEquation": "14"
+            }
+          ]
+        },
+        {
+          "atomType": "Extrude",
+          "x": 0.35969537199765667,
+          "y": 0.4923857868020305,
+          "uniqueID": "id-1374",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "height",
+              "ioValue": 2,
+              "currentEquation": "2"
+            }
+          ]
+        },
+        {
+          "atomType": "Difference",
+          "x": 0.4516695957820738,
+          "y": 0.5431472081218274,
+          "uniqueID": "id-1378",
+          "ioValues": [
+            {
+              "name": "retain",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "remove",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ]
+        },
+        {
+          "atomType": "Circle",
+          "x": 0.2530755711775044,
+          "y": 0.66751269035533,
+          "uniqueID": "id-1382",
+          "ioValues": [
+            {
+              "name": "diameter",
+              "ioValue": 17,
+              "currentEquation": "17"
+            }
+          ]
+        },
+        {
+          "atomType": "Extrude",
+          "x": 0.35307557117750443,
+          "y": 0.66751269035533,
+          "uniqueID": "id-1385",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "height",
+              "ioValue": 10
             }
           ]
         }
@@ -728,14 +767,24 @@
           "ap2ID": "id-1355"
         },
         {
-          "ap2Name": "geometry",
-          "ap1ID": "id-1355",
-          "ap2ID": "id-1364"
+          "ap2Name": "number or geometry",
+          "ap1ID": "id-1359",
+          "ap2ID": "id-1274"
         },
         {
           "ap2Name": "Shape 3",
           "ap1ID": "id-1364",
           "ap2ID": "id-1359"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-1371",
+          "ap2ID": "id-1374"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-1382",
+          "ap2ID": "id-1385"
         }
       ],
       "fileTypeVersion": 1
